@@ -91,6 +91,9 @@ _SCOPE_COLLECTIONS = {
     'license': {
         'data_factory': None
     },
+    'marine_input_model': {
+        'data_factory': None
+    },
     'prob_data_type': {
         'data_factory': None
     },
@@ -130,6 +133,7 @@ _UID_FPATH = __file__.replace('.py', '.json')
 #with open(_UID_FPATH, 'r') as fstream:
 #    _UID_MAP = json.loads(fstream.read())
 _UID_MAP = {}
+
 
 def _main(args):
     """Main entry point.
@@ -200,8 +204,8 @@ def _create_term(collection, raw_name, data):
         description = data['description']
     except (TypeError, KeyError):
         description = None
-    else:
-        del data['description']
+#    else:
+#        del data['description']
 
     try:
         label = data['label']
