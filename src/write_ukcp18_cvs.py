@@ -115,9 +115,6 @@ _SCOPE_COLLECTIONS = {
     'source_id': {
         'data_factory': lambda obj, name: obj[name]
     },
-    'source_type': {
-        'data_factory': None
-    },
     'variable': {
         'data_factory': lambda obj, name: obj[name]
     }
