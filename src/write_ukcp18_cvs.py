@@ -112,9 +112,6 @@ _SCOPE_COLLECTIONS = {
     'scenario': {
         'data_factory': None
     },
-    'source_id': {
-        'data_factory': lambda obj, name: obj[name]
-    },
     'variable': {
         'data_factory': lambda obj, name: obj[name]
     }
